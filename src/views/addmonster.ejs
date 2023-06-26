@@ -2,14 +2,33 @@
 <html lang="en">
 <head>
     <%- include('./partials/head', {css: 'css/main.css'}) %>
+    <link rel="stylesheet" href="css/addmonster.css">
 </head>
 <body>
-    <header>
-        <%- include('./partials/header') %>
-    </header>
-    <main>
-        <h2> Adicionar novo monstro </h2>  
-    </main>
+    <div id="wrapper">
+        <header>
+            <%- include('./partials/header') %>
+        </header>
+        <main>
+            <h1> Adicionar novo monstro </h1>
+            <br/>
+            <form action="registernewmonster" method="POST">
+                <h2>Nome:</h2> 
+                    <input type="text" tabindex="1"></br></br>
+                <h2>Titulo:</h2>
+                    <input type="text" tabindex="2"></br></br>
+                <h2>Tamanho:</h2>
+                    <input type="number" tabindex="3"></br></br>
+                <h2>Icone:</h2>
+                    <input type="image" tabindex="4" class="inputimg"></br></br>
+                <h2>Foto:</h2>
+                    <input type="image" tabindex="5" class="inputimg"></br></br>
+                <h2>Descrição:</h2>
+                    <input type="text" tabindex="6" ></br></br></br>
+                <button type="submit">Enviar</button></br></br></br>
+            </form>  
+        </main>
+    </div>
     <footer>
         <%- include('./partials/footer') %>
     </footer>
