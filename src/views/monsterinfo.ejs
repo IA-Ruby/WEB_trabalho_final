@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head', {css: 'css/main.css'}) %>
+    <link rel="stylesheet" href="css/monsterinfo.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <%- include('./partials/header') %>
+        </header>
+        <main>
+            <% JSON.stringify(monsterinfo)%>
+            <% monsterinfo.forEach(function(i) { %>
+            <% if(i.id == 1) { %>  
+                <div class="monster-pane">
+                    <img src="<%- i.icon %>" class="icon">
+                    <div class="monster-name">
+                        <h1><%- i.nome %></h1>
+                        <h2><%- i.especie %></h2>
+                        <h2><%- i.tamanho %></h2>
+                    </div>
+                </div>
+                <div class="general-info">
+                    <img src="<%- i.foto %>" class="foto" width="1000px">
+                    <%- i.text %></br>
+                </div> 
+            <% } %>    
+            <% } ); %> 
+        </main>
+    </div>
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+</body>
+</html>

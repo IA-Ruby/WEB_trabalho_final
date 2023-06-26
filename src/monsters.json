@@ -1,0 +1,55 @@
+[{
+    "id": 1,
+    "nome": "Fatalis",
+    "icon": "./img/fatalis_icon.png",
+    "foto": "./img/fatalis_foto.png",
+    "text": "Um lendário dragão negro conhecido apenas como Fatalis. Rumores de ter destruído um reino em uma única noite, e tomou seu castelo para um poleiro. Enquanto seus chifres estiverem intactos, superar o ataque de respiração de sua forma final pode ser impossível. Canhões e balistas podem derrubá-lo. Flinch shots quando estiver voando ou em pé irá abaixar sua cabeça.",
+    "especie": "The Black Dragon",
+    "tamanho": "4137cm",
+    "resistencias": { 
+        "Fogo": "0",
+        "Agua": "0",
+        "Trovão": "0",
+        "Gelo": "0",
+        "Dragão": "3"
+    }
+},{
+    "id": 2,
+    "nome": "Alatreon",
+    "icon": "./img/alatreon_icon.png",
+    "especie": "Elder Dragon",
+    "tamanho": "Grande",
+    "resistencias ": { 
+        "fogo ": "1",
+        "agua": "1",
+        "trovão":"1",
+        "gelo": "1",
+        "dragão":"1"
+    }
+},{
+    "id": 3,
+    "nome": "Kulu-Ya-Ku",
+    "icon": "./img/kulu-ya-ku_icon.png",
+    "especie": "Elder Dragon",
+    "tamanho": "Grande",
+    "resistencias ": { 
+        "fogo ": "1",
+        "agua": "1",
+        "trovão":"1",
+        "gelo": "1",
+        "dragão":"1"
+    }
+},{
+    "id": 4,
+    "nome": "Safi'jiiva",
+    "icon": "./img/safijiiva_icon.png",
+    "especie": "Elder Dragon",
+    "tamanho": "Grande",
+    "resistencias ": { 
+        "fogo ": "1",
+        "agua": "1",
+        "trovão":"1",
+        "gelo": "1",
+        "dragão":"1"
+    }
+}]

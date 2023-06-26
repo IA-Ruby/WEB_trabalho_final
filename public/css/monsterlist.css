@@ -1,0 +1,26 @@
+.monsterlist {
+    font-size: 50px;
+}
+
+.monsterlist ul{
+    list-style-type: none;
+}
+
+.monsterlist ul li{    
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.monsterlist ul li a{ 
+    color: #fff;
+    text-decoration: none;
+}
+
+.card img{
+    height: 200px;
+    width: 200px;
+}
+
+.card{
+    font-size: 30px;
+}

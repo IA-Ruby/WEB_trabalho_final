@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head', {css: 'css/main.css'}) %>
+    <link rel="stylesheet" href="css/monsterlist.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <%- include('./partials/header') %>
+        </header>
+        <main>
+            <div class="monsterlist">
+                Lista de Monstros
+                <ul>
+                    <% JSON.stringify(monster_list)%>
+                    <% monster_list.forEach(function(i) { %>
+                        <li><a href="monsterinfo" class="card"><img src="<%= i.icon %>"/></br><%= i.nome %></a></li>    
+                    <% } ); %> 
+                </ul>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <%- include('./partials/footer') %>
+    </footer>
+</body>
+</html>
