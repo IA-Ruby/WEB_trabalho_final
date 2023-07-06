@@ -15,7 +15,7 @@
                 <ul>
                     <% JSON.stringify(monster_list)%>
                     <% monster_list.forEach(function(i) { %>
-                        <li><a href="monsterinfo" class="card"><img src="<%= i.icon %>"/></br><%= i.nome %></a></li>    
+                        <li><a href="monsterinfo/<%= i.id %>" class="card"><img src="<%= i.icone %>"/></br><%= i.nome %></a></li>    
                     <% } ); %> 
                 </ul>
             </div>

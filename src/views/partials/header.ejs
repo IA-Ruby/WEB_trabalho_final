@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/header.css">
+
 <div class="logo">
     <img src="img/sitelogo.png">
     <h1>Hunter Notes</h1>
@@ -5,7 +7,7 @@
 <ul class="nav">
     <li <% if(page_name === 'home') { %>class="selected"<% } %> >
         <a href="home">Pagina Inicial</a></li>
-    <li <% if(page_name === 'monsterlist') { %>class="selected"<% } %> > 
+    <li <% if(page_name === 'monsterlist' || page_name === 'monsterlist/') { %>class="selected"<% } %> > 
         <a href="monsterlist">Lista de Monstros</a></li>
     <li <% if(page_name === 'addmonster') { %>class="selected"<% } %> > 
         <a href="addmonster">Adicionar Monstros</a></li>

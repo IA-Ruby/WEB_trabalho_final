@@ -10,23 +10,19 @@
             <%- include('./partials/header') %>
         </header>
         <main>
-            <% JSON.stringify(monsterinfo)%>
-            <% monsterinfo.forEach(function(i) { %>
-            <% if(i.id == 1) { %>  
+            <% JSON.stringify(monster) %>
                 <div class="monster-pane">
-                    <img src="<%- i.icon %>" class="icon">
+                    <img src="<%- monster.icone %>" class="icon">
                     <div class="monster-name">
-                        <h1><%- i.nome %></h1>
-                        <h2><%- i.especie %></h2>
-                        <h2><%- i.tamanho %></h2>
+                        <h1><%- monster.nome %></h1>
+                        <h2><%- monster.especie %></h2>
+                        <h2><%- monster.tamanho %></h2>
                     </div>
                 </div>
                 <div class="general-info">
-                    <img src="<%- i.foto %>" class="foto" width="1000px">
-                    <%- i.text %></br>
+                    <img src="<%- monster.foto %>" class="foto" width="1000px">
+                    <%- monster.introducao %></br>
                 </div> 
-            <% } %>    
-            <% } ); %> 
         </main>
     </div>
     <footer>

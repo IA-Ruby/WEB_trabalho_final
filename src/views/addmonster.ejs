@@ -12,19 +12,119 @@
         <main>
             <h1> Adicionar novo monstro </h1>
             <br/>
-            <form action="registernewmonster" method="POST">
+            <form action="/addmonster" enctype="multipart/form-data" method="POST">
                 <h2>Nome:</h2> 
-                    <input type="text" tabindex="1"></br></br>
-                <h2>Titulo:</h2>
-                    <input type="text" tabindex="2"></br></br>
-                <h2>Tamanho:</h2>
-                    <input type="number" tabindex="3"></br></br>
+                    <input type="text" name="nome" tabindex="1"></br></br>
                 <h2>Icone:</h2>
-                    <input type="image" tabindex="4" class="inputimg"></br></br>
+                    <input type="file" name="fotos" tabindex="2" class="inputimg"></br></br>
                 <h2>Foto:</h2>
-                    <input type="image" tabindex="5" class="inputimg"></br></br>
-                <h2>Descrição:</h2>
-                    <input type="text" tabindex="6" ></br></br></br>
+                    <input type="file" name="fotos" tabindex="3" class="inputimg"></br></br>
+                <h2>Introdução:</h2>
+                    <input type="text" name="introducao" tabindex="4"></br></br></br>
+                <h2>Classe:</h2>
+                    <input type="text" name="classe" tabindex="5"></br></br>
+                <h2>Titulo:</h2>
+                    <input type="text" name="titulo" tabindex="5"></br></br>
+                <h2>Tamanho:</h2>
+                    <input type="text" name="tamanho" tabindex="6"></br></br>
+                <h2>Geração:</h2>
+                    <input type="text" name="geracao" tabindex="7"></br></br>
+                <h2>Elementos:</h2>
+                <div class="opcoes">
+                    <div class="campo"> 
+                        <input type="checkbox" name="ele_fire" tabindex="8">
+                        <label for="ele_fire">Fogo</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="ele_water" tabindex="9">
+                        <label for="ele_water">Agua</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="ele_thunder" tabindex="10">
+                        <label for="ele_thunder">Trovão</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="ele_ice" tabindex="11">
+                        <label for="ele_ice">Gelo</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="ele_dragon" tabindex="12">
+                        <label for="ele_dragon">Dragão</label>
+                    </div>
+                </div>
+                <h2>Efeitos elementais:</h2>
+                <div class="opcoes">
+                    <div class="campo">
+                        <input type="checkbox" name="ele_b_fire" tabindex="13">
+                        <label for="ele_b_fire">Fireblight</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="ele_b_water" tabindex="14">
+                        <label for="ele_b_water">Waterblight</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="ele_b_thunder" tabindex="15">
+                        <label for="ele_b_thunder">Thunderblight</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="ele_b_ice" tabindex="16">
+                        <label for="ele_b_ice">Iceblight</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="ele_b_dragon" tabindex="17">
+                        <label for="ele_b_dragon">Dragonblight</label>
+                    </div>
+                </div>
+                <h2>Efeitos anormais:</h2>
+                <div class="opcoes">
+                    <div class="campo">    
+                        <input type="checkbox" name="abn_b_poison" tabindex="18">
+                        <label for="abn_b_poison">Envenenamento</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="abn_b_stun" tabindex="19">
+                        <label for="abn_b_stun">Atordoamento</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="abn_b_sleep" tabindex="20">
+                        <label for="abn_b_sleep">Sono</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="abn_b_blast" tabindex="21">
+                        <label for="abn_b_blast">Blastblight</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="abn_b_bleeding" tabindex="22">
+                        <label for="abn_b_bleeding">Sangramento</label>
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="abn_b_paralysis" tabindex="23">
+                        <label for="abn_b_paralysis">Paralisia</label>
+                    </div>
+                </div>
+                <h2>Fraquesas elementais</h2>
+                <div class="res">
+                    <div class="campo">
+                        <label for="res_fire">Fogo</label>
+                        <input type="range" name="res_fire" min="0" max="3">
+                    </div>
+                    <div class="campo">
+                        <label for="res_water">Agua</label>
+                        <input type="range" name="res_water" min="0" max="3">
+                    </div>
+                    <div class="campo">    
+                        <label for="res_thunder">Trovão</label>
+                        <input type="range" name="res_thunder" min="0" max="3">
+                    </div>
+                    <div class="campo">
+                        <label for="res_ice">Gelo</label>
+                        <input type="range" name="res_ice" min="0" max="3">
+                    </div>
+                    <div class="campo">
+                        <label for="res_dragon">Dragão</label>
+                        <input type="range" name="res_dragon" min="0" max="3">
+                    </div>
+                </div>
                 <button type="submit">Enviar</button></br></br></br>
             </form>  
         </main>
